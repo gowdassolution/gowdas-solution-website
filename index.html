@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gowda's Solution — a small web studio in Bengaluru designing and building considered, fast websites for founders and small teams." />
+  <meta name="theme-color" content="#EFEDE5" />
+  <title>Gowda's Solution — Web Studio, Bengaluru</title>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <!-- Background design layer: the page as a marked-up design file -->
+  <div class="canvas" aria-hidden="true">
+    <span class="crop crop--tl"></span>
+    <span class="crop crop--tr"></span>
+    <span class="crop crop--bl"></span>
+    <span class="crop crop--br"></span>
+    <span class="spine spine--l">Gowda's&nbsp;Solution — design&nbsp;&amp;&nbsp;development — Bengaluru&nbsp;12.97°N</span>
+    <span class="spine spine--r">&lt;/&gt;&nbsp;&nbsp;handmade&nbsp;on&nbsp;the&nbsp;web&nbsp;&nbsp;·&nbsp;&nbsp;est.&nbsp;2024</span>
+  </div>
+
+  <!-- Header -->
+  <header class="masthead" id="masthead">
+    <a href="#top" class="wordmark" aria-label="Gowda's Solution, home">
+      <span class="wordmark__name">Gowda's&nbsp;Solution</span>
+      <span class="wordmark__tag">Web Studio</span>
+    </a>
+    <nav class="masthead__nav" aria-label="Primary">
+      <a href="#studio"><span class="idx">01</span> Studio</a>
+      <a href="#work"><span class="idx">02</span> Work</a>
+      <a href="#approach"><span class="idx">03</span> Approach</a>
+      <a href="#services"><span class="idx">04</span> Services</a>
+    </nav>
+    <div class="masthead__end">
+      <span class="clock" id="clock" aria-hidden="true">BLR&nbsp;—:—</span>
+      <a href="#contact" class="enquire">Enquire</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="drawer" id="drawer" hidden>
+    <a href="#studio"><span class="idx">01</span> Studio</a>
+    <a href="#work"><span class="idx">02</span> Work</a>
+    <a href="#approach"><span class="idx">03</span> Approach</a>
+    <a href="#services"><span class="idx">04</span> Services</a>
+    <a href="#contact"><span class="idx">05</span> Enquire</a>
+  </div>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <span class="deco deco--br" aria-hidden="true">&lt;hero&gt;</span>
+      <div class="wf wf--hero" aria-hidden="true">
+        <svg viewBox="0 0 240 158" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <rect x="1" y="1" width="238" height="156" rx="9"/>
+          <line x1="1" y1="27" x2="239" y2="27"/>
+          <circle cx="16" cy="14" r="3.5"/><circle cx="30" cy="14" r="3.5"/><circle cx="44" cy="14" r="3.5"/>
+          <rect x="20" y="44" width="110" height="13" rx="6.5"/>
+          <rect x="20" y="70" width="200" height="7" rx="3.5"/>
+          <rect x="20" y="86" width="170" height="7" rx="3.5"/>
+          <rect x="20" y="112" width="74" height="26" rx="13"/>
+        </svg>
+      </div>
+      <div class="wf wf--cursor wf--accent" aria-hidden="true" style="left:69%;top:60%">
+        <svg viewBox="0 0 40 42" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round">
+          <path d="M6 3 L35 19 L21 22 L28 37 L22 39 L15 25 L6 33 Z"/>
+        </svg>
+      </div>
+      <p class="hero__eyebrow reveal">Web design &amp; development — Bengaluru, IN</p>
+      <div class="hero__body">
+        <h1 class="hero__headline">
+          <span class="ln"><span>We build websites</span></span>
+          <span class="ln"><span>that don't look like</span></span>
+          <span class="ln"><span>everyone <em>else's.</em></span></span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Scrolling tape — transition into the work -->
+    <div class="tape" aria-hidden="true">
+      <div class="tape__track">
+        <div class="tape__group">
+          <span class="tape__item">Web Design</span><span class="tape__sep">✳</span>
+          <span class="tape__item">Web Development</span><span class="tape__sep">✳</span>
+          <span class="tape__item">Business Solutions</span><span class="tape__sep">✳</span>
+          <span class="tape__item">SEO</span><span class="tape__sep">✳</span>
+          <span class="tape__item">Maintenance</span><span class="tape__sep">✳</span>
+        </div>
+        <div class="tape__group">
+          <span class="tape__item">Web Design</span><span class="tape__sep">✳</span>
+          <span class="tape__item">Web Development</span><span class="tape__sep">✳</span>
+          <span class="tape__item">Business Solutions</span><span class="tape__sep">✳</span>
+          <span class="tape__item">SEO</span><span class="tape__sep">✳</span>
+          <span class="tape__item">Maintenance</span><span class="tape__sep">✳</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Studio -->
+    <section class="studio" id="studio">
+      <span class="deco deco--br" aria-hidden="true">&lt;studio&gt;</span>
+      <div class="wf wf--studio" aria-hidden="true">
+        <svg viewBox="0 0 150 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M42 20 L22 40 L42 60"/>
+          <path d="M108 20 L128 40 L108 60"/>
+          <line x1="86" y1="14" x2="64" y2="66"/>
+        </svg>
+      </div>
+      <div class="sec-head">
+        <span class="sec-head__no">01</span>
+        <h2 class="sec-head__title">The <em>studio</em></h2>
+      </div>
+      <div class="studio__body">
+        <p class="studio__lead reveal">
+          Gowda's Solution is a web development and digital solutions company
+          founded in 2026. We design and build modern, high-performance websites
+          for businesses, professionals, and growing brands. From the first idea
+          to the final launch, I work closely with clients to create digital
+          experiences that look refined, work seamlessly, and serve a clear
+          business purpose.
+        </p>
+        <ul class="studio__notes reveal">
+          <li><span>Founded</span> 2026</li>
+          <li><span>Based</span> United States · Remote</li>
+          <li><span>Focus</span> Web Design · Development · Digital Solutions</li>
+          <li><span>Clients</span> Businesses · Professionals · Growing Brands</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work index -->
+    <section class="work" id="work">
+      <div class="sec-head">
+        <span class="sec-head__no">02</span>
+        <h2 class="sec-head__title">Selected <em>work</em></h2>
+        <p class="sec-head__note">A handful of projects at a time,<br/>so each one gets real attention.</p>
+      </div>
+
+      <div class="index" id="index">
+        <div class="index__cols" aria-hidden="true">
+          <span>No.</span><span>Project</span><span>Discipline</span><span>Year</span>
+        </div>
+        <a class="row" href="https://jngholdingsllc.com/" target="_blank" rel="noopener noreferrer" data-plate="JNG Holdings" style="--tone:#3f5f7a">
+          <span class="row__no">01</span>
+          <span class="row__name">JNG Holdings</span>
+          <span class="row__disc">Corporate &amp; investment website</span>
+          <span class="row__year">2026</span>
+        </a>
+        <a class="row" href="https://jngconsultancyservices.com/" target="_blank" rel="noopener noreferrer" data-plate="JNG Consultancy" style="--tone:#4f7a63">
+          <span class="row__no">02</span>
+          <span class="row__name">JNG Consultancy Services</span>
+          <span class="row__disc">Financial services website</span>
+          <span class="row__year">2026</span>
+        </a>
+        <a class="row" href="https://ngpatel.com/" target="_blank" rel="noopener noreferrer" data-plate="NG Patel" style="--tone:#7a6a4f">
+          <span class="row__no">03</span>
+          <span class="row__name">NG Patel</span>
+          <span class="row__disc">Professional portfolio &amp; accounting website</span>
+          <span class="row__year">2026</span>
+        </a>
+        <a class="row" href="https://laquintaknoxvillehotel.com/" target="_blank" rel="noopener noreferrer" data-plate="La Quinta" style="--tone:#b0603f">
+          <span class="row__no">04</span>
+          <span class="row__name">La Quinta Knoxville</span>
+          <span class="row__disc">Hotel website</span>
+          <span class="row__year">2026</span>
+        </a>
+      </div>
+
+      <!-- Floating preview (desktop) -->
+      <div class="plate" id="plate" aria-hidden="true">
+        <div class="plate__bar"><i></i><i></i><i></i></div>
+        <div class="plate__screen"><span id="plateName">Aurora</span></div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="approach" id="approach">
+      <span class="deco deco--mid" aria-hidden="true">&lt;process&gt;</span>
+      <div class="wf wf--approach" aria-hidden="true">
+        <svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <rect x="1" y="1" width="76" height="88" rx="8"/>
+          <circle cx="20" cy="20" r="7"/>
+          <line x1="34" y1="16" x2="64" y2="16"/><line x1="34" y1="24" x2="56" y2="24"/>
+          <line x1="14" y1="44" x2="64" y2="44"/><line x1="14" y1="56" x2="52" y2="56"/><line x1="14" y1="68" x2="60" y2="68"/>
+          <rect x="95" y="24" width="60" height="26" rx="13"/>
+          <circle cx="141" cy="37" r="9"/>
+        </svg>
+      </div>
+      <div class="sec-head">
+        <span class="sec-head__no">03</span>
+        <h2 class="sec-head__title">How we <em>work</em></h2>
+        <p class="sec-head__note">Four steps. No page-builders,<br/>no templates, no surprises.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__no">01</span>
+          <h3>Understand</h3>
+          <p>We understand your business, goals, audience, and requirements before we begin.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__no">02</span>
+          <h3>Design</h3>
+          <p>We create a clear visual direction and user experience tailored to your brand.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__no">03</span>
+          <h3>Build</h3>
+          <p>We develop fast, responsive, and reliable digital experiences with attention to every detail.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__no">04</span>
+          <h3>Launch</h3>
+          <p>We test, deploy, optimize, and support your website after it goes live.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <span class="deco deco--mid" aria-hidden="true">&lt;services&gt;</span>
+      <div class="wf wf--services" aria-hidden="true">
+        <svg viewBox="0 0 200 130" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <rect x="1" y="1" width="94" height="60" rx="7"/>
+          <rect x="105" y="1" width="94" height="60" rx="7"/>
+          <rect x="1" y="70" width="94" height="60" rx="7"/>
+          <rect x="105" y="70" width="94" height="60" rx="7"/>
+          <path d="M12 44 L28 30 L40 40 L58 24 L84 44" />
+          <circle cx="122" cy="22" r="8"/><line x1="115" y1="46" x2="185" y2="46"/>
+        </svg>
+      </div>
+      <div class="sec-head">
+        <span class="sec-head__no">04</span>
+        <h2 class="sec-head__title">What we <em>do</em></h2>
+        <p class="sec-head__note">Everything a website needs,<br/>under one roof.</p>
+      </div>
+      <dl class="spec">
+        <div class="spec__row reveal">
+          <dt>Web Design</dt>
+          <dd>Modern, responsive interfaces designed around your brand, audience, and business goals.</dd>
+          <span class="spec__tag">UI/UX · Responsive</span>
+        </div>
+        <div class="spec__row reveal">
+          <dt>Web Development</dt>
+          <dd>Fast, scalable websites and web applications built with modern technologies.</dd>
+          <span class="spec__tag">Websites · Web apps</span>
+        </div>
+        <div class="spec__row reveal">
+          <dt>Business Solutions</dt>
+          <dd>Custom digital solutions that help businesses streamline operations and grow online.</dd>
+          <span class="spec__tag">Custom · Growth</span>
+        </div>
+        <div class="spec__row reveal">
+          <dt>SEO</dt>
+          <dd>Search-optimized structure, content, and performance so the right customers find you.</dd>
+          <span class="spec__tag">Technical SEO · Analytics</span>
+        </div>
+        <div class="spec__row reveal">
+          <dt>Maintenance &amp; Support</dt>
+          <dd>Reliable hosting, updates, performance optimization, security, and ongoing support.</dd>
+          <span class="spec__tag">Hosting · Security</span>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <span class="deco deco--br" aria-hidden="true">&lt;contact/&gt;</span>
+      <div class="wf wf--contact" aria-hidden="true">
+        <svg viewBox="0 0 240 140" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <rect x="1" y="1" width="238" height="30" rx="8"/>
+          <line x1="18" y1="16" x2="120" y2="16"/>
+          <rect x="1" y="44" width="238" height="30" rx="8"/>
+          <line x1="18" y1="59" x2="150" y2="59"/>
+          <rect x="1" y="87" width="238" height="52" rx="8"/>
+          <rect x="150" y="99" width="78" height="28" rx="14" stroke="currentColor" class="wf-fill"/>
+          <path d="M170 113 H210 M198 105 L210 113 L198 121"/>
+        </svg>
+      </div>
+      <div class="contact__head">
+        <span class="sec-head__no">05</span>
+        <h2 class="contact__title reveal">Have something<br/>to build?</h2>
+        <p class="contact__sub reveal">Tell us a little about the project. We read every message and reply within a day.</p>
+      </div>
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+        </div>
+        <div class="form__field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@company.com" />
+        </div>
+        <div class="form__field form__field--wide">
+          <label for="message">Project</label>
+          <textarea id="message" name="message" rows="2" required placeholder="What are you building, and by when?"></textarea>
+        </div>
+        <div class="form__foot">
+          <button type="submit" class="btn">Send enquiry <span aria-hidden="true">→</span></button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+      <p class="contact__or">
+        Prefer email? <a href="mailto:hello@gowdassolution.com">hello@gowdassolution.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="#top" class="foot__mark">Gowda's Solution</a>
+    <div class="foot__cols">
+      <div class="foot__col">
+        <span class="foot__label">Studio</span>
+        <p>Bengaluru, India<br/>Remote worldwide</p>
+      </div>
+      <div class="foot__col">
+        <span class="foot__label">Elsewhere</span>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="foot__col">
+        <span class="foot__label">Contact</span>
+        <a href="mailto:hello@gowdassolution.com">hello@gowdassolution.com</a>
+        <span class="clock" id="clock2">BLR —:—</span>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>© <span id="year"></span> Gowda's Solution</span>
+      <span class="foot__colophon">Typeset in Bricolage Grotesque &amp; Newsreader. Built by hand.</span>
+      <button id="backTop" class="foot__top">Top ↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
