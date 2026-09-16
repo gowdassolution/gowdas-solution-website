@@ -8,15 +8,15 @@ const canHover = window.matchMedia("(hover: hover) and (min-width: 861px)").matc
 /* Year */
 document.getElementById("year").textContent = new Date().getFullYear();
 
-/* ---------- Live Bengaluru clock (IST, UTC+5:30) ---------- */
+/* ---------- Live clock — US Eastern (America/New_York) ---------- */
 (function clock() {
   const els = [document.getElementById("clock"), document.getElementById("clock2")].filter(Boolean);
   const fmt = new Intl.DateTimeFormat("en-GB", {
-    timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit", hour12: false,
+    timeZone: "America/New_York", hour: "2-digit", minute: "2-digit", hour12: false,
   });
   const tick = () => {
     const t = fmt.format(new Date());
-    els.forEach((el) => (el.textContent = "BLR " + t));
+    els.forEach((el) => (el.textContent = "USA " + t));
   };
   tick();
   setInterval(tick, 1000 * 15);

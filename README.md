@@ -9,7 +9,7 @@ Deliberately **not** a dark-gradient SaaS template. The site is built like a stu
 project dossier:
 
 - **Concept** — a "working index": the studio presents itself and its work as a
-  typeset table of contents, with real metadata (a live Bengaluru clock, coordinates,
+  typeset table of contents, with real metadata (a live US Eastern clock,
   booking status).
 - **Type** — Bricolage Grotesque (display) · Newsreader serif (body) · JetBrains Mono
   (labels & data). A serif-body / grotesque-display inversion, on purpose.
@@ -20,7 +20,7 @@ project dossier:
 
 ## Features
 
-- Live IST clock in the masthead and footer
+- Live US Eastern clock in the masthead and footer
 - Native smooth scrolling (CSS `scroll-behavior`) — no scroll-hijacking library
 - Work index with a cursor-following preview plate (desktop, `hover` devices only)
 - Fully responsive with a full-screen mobile menu
